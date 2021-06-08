@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Registration</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="images/icon/favicon3.png" type="image/x-icon">
+        
+        <!-- Bootstrap Stylesheet -->	
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Font Awesome Stylesheet -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+            
+        <!-- Custom Stylesheets -->	
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" id="cpswitch" href="css/orange.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!-- DC Payment Icons CSS -->
+        <link rel="stylesheet" type="text/css" href="css/dc_payment_icons.css" /> 
+    </head>
+    
+    
+    <body>
+        <!--====== LOADER =====-->
+        <div class="loader"></div>
+    
+        <!--======== SEARCH-OVERLAY =========-->       
+        <div class="overlay">
+            <a href="javascript:void(0)" id="close-button" class="closebtn">&times;</a>
+            <div class="overlay-content">
+                <div class="form-center">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search..." required />
+                                <span class="input-group-btn"><button type="submit" class="btn"><span><i class="fa fa-search"></i></span></button></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--============= END SEARCH ============= -->
+        
+        <!--============= TOP-BAR ===========-->
+        <div id="top-bar" class="tb-text-white">
+            <div class="container">
+                <div class="row">          
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div id="links">
+                            <ul class="list-unstyled list-inline">
+                                <li><a href="login.html"><span><i class="fa fa-lock"></i></span>Login</a></li>
+                                <li><a href="registration.html"><span><i class="fa fa-plus"></i></span>Sign Up</a></li>
+                                <li>
+                                    <form>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <div class="form-group currency">
+                                                    <span><i class="fa fa-angle-down"></i></span>
+                                                    <select class="form-control">
+                                                        <option value="">$</option>
+                                                        <option value="">₫</option>
+                                                    </select>
+                                                </div>
+
+											</li>
+                                            <li>
+                                                <div class="form-group language">
+                                                    <span><i class="fa fa-angle-down"></i></span>
+                                                    <select class="form-control">
+                                                        <option value="">EN</option>
+                                                        <option value="">VN</option>
+                                                    </select>
+                                                </div>
+                                                
+                                            </li>
+										</ul>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>				
+                </div>
+            </div>
+        </div>
+        <!--============ END-TOP-BAR ==================-->
+
+        <nav class="navbar navbar-default main-navbar navbar-custom navbar-colored" id="mynavbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" id="menu-button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <div class="header-search hidden-lg">
+                        <a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a>
+                    </div>
+                    <a href="hotel-homepage.html" class="navbar-brand"><span><i class="fa fa-home"></i>GU</span>Booking</a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="myNavbar1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="hotel-homepage.html">Home</a></li>
+                        <li><a href="hotel-booking.html">Hotels</a></li>
+                        <li><a href="tour-booking.html">Tours</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="search-button"><span><i class="fa fa-search"></i></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ===================== END HEADING ===============================-->
+        
+        <!--================ PAGE-COVER =================-->
+        <section class="page-cover" id="cover-hotel-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                    	<h1 class="page-title">Registration</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li class="active">Registration Page</li>
+                        </ul>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end page-cover -->
+        
+        
+        <!--===== INNERPAGE-WRAPPER ====-->
+        <section class="innerpage-wrapper">
+        	<div id="registration" class="innerpage-section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                        
+                        	<div class="flex-content">
+                                <div class="custom-form custom-form-fields">
+                                    <h3>Registration</h3>
+                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                                    <form>
+                                            
+                                        <div class="form-group">
+                                             <input type="text" class="form-control" placeholder="Username"  required/>
+                                             <span><i class="fa fa-user"></i></span>
+                                        </div>
+        
+                                        <div class="form-group">
+                                             <input type="email" class="form-control" placeholder="Email"  required/>
+                                             <span><i class="fa fa-envelope"></i></span>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                             <input type="password" class="form-control" placeholder="Password"  required/>
+                                             <span><i class="fa fa-lock"></i></span>
+                                        </div>
+        
+                                        <div class="form-group">
+                                             <input type="password" class="form-control" placeholder="Confirm Password"  required/>
+                                             <span><i class="fa fa-lock"></i></span>
+                                        </div>
+                                        
+                                        <button class="btn btn-orange btn-block">Register</button>
+                                    </form>
+                                    
+                                    <div class="other-links">
+                                    	<p class="link-line">Already Have An Account ? <a href="login.html">Login Here</a></p>
+                                    </div><!-- end other-links -->
+                                </div><!-- end custom-form -->
+                                
+                                <div class="flex-content-img custom-form-img">
+                                    <img src="images/ADs/Login-Registration.jpg" class="img-responsive" alt="registration-img" />
+                                </div><!-- end custom-form-img -->
+                            </div><!-- end form-content -->
+                            
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->         
+            </div><!-- end registration -->
+        </section><!-- end innerpage-wrapper -->
+        
+        
+        <!--======================= BEST FEATURES =====================-->
+        <section id="best-features" class="banner-padding black-features">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-6 col-md-3">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-dollar"></i></span>
+                        	<h3>Best Price Guarantee</h3>
+                        </div><!-- end b-feature-block -->
+                    </div><!-- end columns -->
+                    
+                    <div class="col-sm-6 col-md-3">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-lock"></i></span>
+                        	<h3>Safe and Secure</h3>
+                        </div><!-- end b-feature-block -->
+                    </div><!-- end columns -->
+
+                    <div class="col-sm-6 col-md-3">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-thumbs-up"></i></span>
+                        	<h3>Best Travel Agents</h3>
+                        </div><!-- end b-feature-block -->
+                    </div><!-- end columns -->
+
+                    <div class="col-sm-6 col-md-3">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-bars"></i></span>
+                        	<h3>Travel Guidelines</h3>
+                        </div><!-- end b-feature-block -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+        	</div><!-- end container -->
+        </section><!-- end best-features -->
+        
+        
+        <!--========================= NEWSLETTER-1 ==========================-->
+        <section id="newsletter-1" class="section-padding back-size newsletter"> 
+            <div class="container">
+                <div class="row">
+                	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <h2>Subscribe Our Newsletter</h2>
+                        <p>Subscibe to receive our interesting updates</p>	
+                        <form>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="email" class="form-control input-lg" placeholder="Enter your email address" required/>
+                                    <span class="input-group-btn"><button class="btn btn-lg"><i class="fa fa-envelope"></i></button></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end newsletter-1 -->
+        
+        
+            <!--======================= FOOTER =======================-->
+            <section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+                <div id="footer-top" class="banner-padding ftr-top-grey ftr-text-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 footer-widget ftr-contact">
+                                <h3 class="footer-heading">MAPS</h3>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2783111614767!2d106.68690931526032!3d10.789983261892695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528cd4c6820c3%3A0x1bdce6fd0a2d9174!2zMzY5IEhhaSBCw6AgVHLGsG5nLCBQaMaw4budbmcgOCwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1622523024096!5m2!1svi!2s" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 footer-widget ftr-links1">
+                                <h3 class="footer-heading">PAYMENTS</h3>
+                                <ul class="list-unstyled">
+                                    <li><span class="dc_payment_icons_flat_54 dc_visa_flat" title="Visa Electron"></span></li>
+                                    <li><span class="dc_payment_icons_flat_54 dc_jcbcard_flat" title="JCB Card"></span></li>
+                                    <li><span class="dc_payment_icons_flat_54 dc_mastercard_flat" title="MasterCard"></span></li>
+                                    <li><span class="dc_payment_icons_flat_54 dc_paypal_flat" title="PayPal"></span></li>
+                                </ul>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 footer-widget ftr-links ">
+                                <h3 class="footer-heading">RESOURCES</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Site Map</a></li>
+                                </ul>
+                            </div>
+    
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-widget ftr-contact">
+                                <h3 class="footer-heading">CONTACT US</h3>
+                                <ul class="list-unstyled">
+                                    <li><span><i class="fa fa-map-marker"></i></span>369 Hai Ba Trung St, Ward 9
+                                        <i style="margin-left: 31px;font-style: normal;"><span>District 1, HCM City.</span></i> 
+                                    </li>
+                                    <li><span><i class="fa fa-phone"></i></span>+84 686 697</li>
+                                    <li><span><i class="fa fa-envelope"></i></span>gubooking@gmail.com</li>
+                                </ul>
+                                <ul class="social-links list-inline list-unstyled">
+                                    <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                                    <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
+                                    <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                                    <li><a href="#"><span><i class="fa fa-pinterest-p"></i></span></a></li>
+                                    <li><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
+                                    <li><a href="#"><span><i class="fa fa-linkedin"></i></span></a></li>
+                                    <li><a href="#"><span><i class="fa fa-youtube-play"></i></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container -->
+                </div>
+                <!-- end footer-top -->
+    
+                <div id="footer-bottom" class="ftr-bot-black">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                                <p>© 2021 <a href="#">GUBooking</a>. All rights reserved.</p>
+                            </div>
+                            <!-- end columns -->
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <!-- end columns -->
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container -->
+                </div>
+                <!-- end footer-bottom -->
+            </section>
+            <!-- ================================= END FOOTER =================================-->
+        
+        
+        <!-- Page Scripts Starts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom-navigation.js"></script>
+        <!-- Page Scripts Ends -->
+    </body>
+</html>
